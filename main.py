@@ -19,13 +19,23 @@ PM_START = """Hello.....!, I am Siva the boss robot.
 Bot is under maintenance, Still wait for new features.
 """
 
+buttons = [[
+    InlineKeyboardButton(text="Owner", url = "https://t.me/Siva_the_king")
+    ],[
+    InlineKeyboardButton(text="Support", url = "https://t.me/shukuranai_support")
+]
+
+
+
+
     
 @Siva.on_message(filters.command("start"))
 async def start_cmd(client, message):
     print("Start Command is working")
     await message.reply_photo(
         photo = "https://telegra.ph/file/58adbfdd00ad008e2e62b.jpg",
-        caption=PM_START
+        caption=PM_START,
+        reply_markup=InlineKeyboardMarkup(buttons)
     )
 
 
