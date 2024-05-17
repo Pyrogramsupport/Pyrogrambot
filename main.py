@@ -2,6 +2,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import CallbackQuery
+import asyncio
 
 #create env
 
@@ -40,6 +41,7 @@ buttons = [[
 async def start_cmd(client, message):
     print("Start Command is working")
     await message.reply_text("Loading....")
+    await asyncio.sleep(0.9)
     await message.delete()
     await message.reply_photo(
         photo = "https://telegra.ph/file/58adbfdd00ad008e2e62b.jpg",
