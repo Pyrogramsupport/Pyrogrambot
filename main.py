@@ -40,15 +40,16 @@ buttons = [[
 @Siva.on_message(filters.command("start"))
 async def start_cmd(client, message):
     print("Start Command is working")
-    reply1 = await message.reply_text("Loading")
+    reply1 = await message.reply_text("`Loading `")
     await asyncio.sleep(0.9)
-    reply2 = await reply1.edit("`Loading.`")
+    reply2 = await reply1.edit("`Loading . `")
     await asyncio.sleep(0.9)
-    reply3 = await reply2.edit("`Loading..`")
+    reply3 = await reply2.edit("`Loading . . `")
     await asyncio.sleep(0.9)
-    reply4 = await reply3.edit("`Loading...`")
+    reply4 = await reply3.edit("`Loading . . . `")
     await asyncio.sleep(0.9)
     await reply4.delete()
+    await asyncio.sleep(0.3)
     await message.reply_photo(
         photo = "https://telegra.ph/file/58adbfdd00ad008e2e62b.jpg",
         caption=PM_START,
