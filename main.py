@@ -23,7 +23,7 @@ buttons = [[
     InlineKeyboardButton(text="Owner", url = "https://t.me/Siva_the_king")
     ],[
     InlineKeyboardButton(text="Support", url = "https://t.me/shukuranai_support")
-]
+]]
 
 
 
