@@ -23,7 +23,10 @@ Bot is under maintenance, Still wait for new features.
 @Siva.on_message(filters.command("start"))
 async def start_cmd(client, message):
     print("Start Command is working")
-    await message.reply_text(PM_START)
+    await message.reply_photo(
+        photo = "https://telegra.ph/file/58adbfdd00ad008e2e62b.jpg",
+        caption=PM_START
+    )
 
 
 
