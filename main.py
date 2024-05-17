@@ -49,9 +49,6 @@ async def start_cmd(client, message):
         reply_markup=InlineKeyboardMarkup(buttons)
     )
 
-#create call back query
-@Siva.on_callback_query()
-async def callback(client: Siva, query: CallbackQuery)
 
 
 
