@@ -15,8 +15,31 @@ Siva = Client(
     bot_token=BOT_TOKEN
 )
 
+@Siva.on_message(filters.command("start"))
+async def start_cmd(client, message):
+    await message.reply_text("hello... I am siva the boss robot")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 print("Bot is Alive and Perfectly Working")
+
+
+
+
 Siva.run()
 
 
