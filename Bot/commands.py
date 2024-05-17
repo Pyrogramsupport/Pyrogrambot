@@ -55,7 +55,6 @@ async def start_cmd(client, message):
 
 
 
-print("Bot is Alive and Perfectly Working")
 
 
 
