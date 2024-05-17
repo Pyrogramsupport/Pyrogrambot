@@ -13,11 +13,15 @@ Siva = Client(
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN
-)
 
+PM_START = """Hello.....!, I am Siva the boss robot.
+Bot is under maintenance, Still wait for new features.
+"""
+
+    
 @Siva.on_message(filters.command("start"))
 async def start_cmd(client, message):
-    await message.reply_text("hello... I am siva the boss robot")
+    await message.reply_text(PM_START)
 
 
 
