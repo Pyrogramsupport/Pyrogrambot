@@ -25,7 +25,6 @@ buttons = [[
     
 @Client.on_message(filters.command("start"))
 async def start_cmd(client, message):
-    print("Start Command is working")
     reply1 = await message.reply_text("`Loading `")
     await asyncio.sleep(0.9)
     reply2 = await reply1.edit("`Loading . `")
@@ -41,8 +40,7 @@ async def start_cmd(client, message):
         caption=PM_START,
         reply_markup=InlineKeyboardMarkup(buttons)
     )
-
-
+    print("Start Command is working")
 
 
 
