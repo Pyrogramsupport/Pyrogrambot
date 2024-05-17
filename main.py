@@ -21,6 +21,7 @@ Bot is under maintenance, Still wait for new features.
     
 @Siva.on_message(filters.command("start"))
 async def start_cmd(client, message):
+    print("Start Command is working")
     await message.reply_text(PM_START)
 
 
