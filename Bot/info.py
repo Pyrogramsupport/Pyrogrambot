@@ -1,4 +1,5 @@
 from pyrogram import Client, filters
+from program.types import Message
 
 info_text =f""" ᴜsᴇʀ ɪɴғᴏ 
 ________________________________________________
