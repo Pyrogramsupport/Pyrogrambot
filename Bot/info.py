@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from program.types import Message
+from pyrogram.types import Message
 
 
 
