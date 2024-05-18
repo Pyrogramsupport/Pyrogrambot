@@ -10,8 +10,7 @@ async def info_cmd(client, message):
     info_text=f""" <u>ᴜsᴇʀ ɪɴғᴏ </u>
 
 <b>ғɪʀsᴛ ɴᴀᴍᴇ =</b> {message.from_user.first_name}.
-<b>ʟᴀsᴛ ɴᴀᴍᴇ =</b> {message.from_user.last_name}.   
-<b>ғᴜʟʟ ɴᴀᴍᴇ =</b> {message.from_user.fullname}. 
+<b>ʟᴀsᴛ ɴᴀᴍᴇ =</b> {message.from_user.last_name}.    
 <b>ᴜsᴇʀ ɪᴅ =</b> {message.from_user.id}.          
 <b>ᴜsᴇʀ ɴᴀᴍᴇ =</b> {message.from_user.username} 
 <b>ᴜsᴇʀ ʟɪɴᴋ =</b> {message.from_user.mention}.                                       
