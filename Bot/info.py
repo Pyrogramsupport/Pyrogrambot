@@ -28,7 +28,7 @@ async def ginfo_cmd(client, message):
 <b>ɪɴᴠɪᴛᴇ ʟɪɴᴋ =</b> {message.chat.invite_link}.          
 <b>ᴄʜᴀᴛ ɴᴀᴍᴇ =</b> {message.chat.username}                                       
 """
-    await message.reply_text(info_text)
+    await message.reply_text(group_text)
     print("User Info Successfully sent to the user")
 
 
