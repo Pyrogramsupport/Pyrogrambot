@@ -5,7 +5,7 @@ from pyrogram.types import Message
 
 
 
-@Client.on_message(filters.command("info") & filters.private)
+@Client.on_message(filters.command("info"))
 async def info_cmd(client, message):
     info_text=f""" <u>ᴜsᴇʀ ɪɴғᴏ </u>
 
@@ -19,8 +19,8 @@ async def info_cmd(client, message):
     print("User Info Successfully sent to the user")
 
 #ɪɴғᴏ ɪɴ ᴄʜᴀᴛ
-@Client.on_message(filters.command("info") & filters.group)
-async def info_cmd(client, message):
+@Client.on_message(filters.command("ginfo"))
+async def ginfo_cmd(client, message):
     group_text=f""" <u>ɢʀᴏᴜᴘ ɪɴғᴏ </u>
 
 <b>ᴛɪᴛʟᴇ =</b> {message.chat.title}.
