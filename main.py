@@ -1,5 +1,4 @@
-main.py in 
-from .. import Siva
+
 from pyrogram import Client
 
 Siva = Client(
