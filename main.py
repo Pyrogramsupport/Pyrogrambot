@@ -1,3 +1,5 @@
+main.py in 
+from .. import Siva
 from pyrogram import Client
 
 Siva = Client(
@@ -10,9 +12,11 @@ Siva = Client(
 
 print("Bot is started and perfectly working ")
 Siva.run()
-with siva:
-    await Siva.send_photo(
+with Siva:
+    Siva.send_photo(
         chat_id=-1002123259805,
         photo="https://telegra.ph/file/cefe116aeebdc9462971a.jpg",
         caption="𝐵𝑜𝑡 𝑖𝑠 𝑠𝑡𝑎𝑟𝑡𝑒𝑑 𝑡𝑜 𝑤𝑜𝑟𝑘𝑖𝑛𝑔"
     )
+
+
