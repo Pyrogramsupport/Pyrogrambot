@@ -12,7 +12,7 @@ Siva = Client(
 print("Bot is started and perfectly working ")
 
 Siva.run()
-async with Siva:
+with Siva:
     await Siva.send_photo(
         chat_id=-1002123259805,
         photo="https://telegra.ph/file/cefe116aeebdc9462971a.jpg",
