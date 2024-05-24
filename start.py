@@ -49,7 +49,7 @@ async def start_cmd(client, msg):
     reply2 = await reply1.edit("`opening`")
     await asyncio.sleep(0.7)
     await reply2.delete()
-    await msg.reply_text(
+    await msg.reply_photo(
         photo="https://telegra.ph/file/58adbfdd00ad008e2e62b.jpg",
         caption="**Click the below button**",
         reply_markup=InlineKeyboardMarkup(
