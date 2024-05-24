@@ -10,7 +10,6 @@ from Bot import app
 
 PM_START = """Hello.....!, I am Siva the boss robot.
 Bot is under maintenance, Still wait for new features.
-"""
 #start cmd buttons
 
 buttons = [[
@@ -41,7 +40,7 @@ async def start_cmd(client, message):
         reply_markup=InlineKeyboardMarkup(buttons)
     )
     print("Start Command is working")
-
+"""
 @Client.on_message(filters.command("start") & filters.group)
 async def start_cmd(client, message):
     reply1 = await message.reply_text("**please wait**")
