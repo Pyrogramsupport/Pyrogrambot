@@ -43,23 +43,23 @@ buttons = [[
 #start cmd filters 
 if len(message.text.split()) > 1 and message.text.split()[1].startswith('aq'):
      @app.on_message(filters.command("start") & filters.private)
-    async def start_cmd(client, message):
-        reply1 = await message.reply_text("`Loading `")
-        await asyncio.sleep(0.9)
-        reply2 = await reply1.edit("`Loading . `")
-        await asyncio.sleep(0.9)
-        reply3 = await reply2.edit("`Loading . . `")
-        await asyncio.sleep(0.9)
-        reply4 = await reply3.edit("`Loading . . . `")
-        await asyncio.sleep(0.9)
-        await reply4.delete()
-        await asyncio.sleep(0.3)
-        await message.reply_photo(
-            photo = "https://telegra.ph/file/58adbfdd00ad008e2e62b.jpg",
-            caption=PM_START,
-            reply_markup=InlineKeyboardMarkup(buttons)
-        )
-        print("Start Command is working")
+     async def start_cmd(client, message):
+         reply1 = await message.reply_text("`Loading `")
+         await asyncio.sleep(0.9)
+         reply2 = await reply1.edit("`Loading . `")
+         await asyncio.sleep(0.9)
+         reply3 = await reply2.edit("`Loading . . `")
+         await asyncio.sleep(0.9)
+         reply4 = await reply3.edit("`Loading . . . `")
+         await asyncio.sleep(0.9)
+         await reply4.delete()
+         await asyncio.sleep(0.3)
+         await message.reply_photo(
+             photo = "https://telegra.ph/file/58adbfdd00ad008e2e62b.jpg",
+             caption=PM_START,
+             reply_markup=InlineKeyboardMarkup(buttons)
+         )
+         print("Start Command is working")
 
 
 @app.on_message(filters.command("start") & filters.group)
