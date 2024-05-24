@@ -41,9 +41,11 @@ buttons = [[
 
 
 #start cmd filters 
-if len(message.text.split()) > 1 and message.text.split()[1].startswith('aq'):
-     @app.on_message(filters.command("start") & filters.private)
-     async def start_cmd(client, message):
+@app.on_message(filters.command("start") & filters.private)
+async def start_cmd(client, message):
+       if len(message.text.split()) > 1 and message.text.split()[1].startswith('aq'):
+           return await message.reply('AQ msg')
+       else:    
          reply1 = await message.reply_text("`Loading `")
          await asyncio.sleep(0.9)
          reply2 = await reply1.edit("`Loading . `")
