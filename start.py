@@ -3,7 +3,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import CallbackQuery
 import asyncio
-from Bot import app
+
 
 
 #start cmd reply text
@@ -24,7 +24,7 @@ buttons = [[
 
 #start cmd filters 
  
-@Client.on_message(filters.command("start") & filters.private)
+@Client.on_message(filters.command("start"))
 async def start_cmd(client, message):
     reply1 = await message.reply_text("`Loading `")
     await asyncio.sleep(0.9)
@@ -42,44 +42,3 @@ async def start_cmd(client, message):
         reply_markup=InlineKeyboardMarkup(buttons)
     )
     print("Start Command is working")
-"""
-@Client.on_message(filters.command("start") & filters.group)
-async def start_cmd(client, message):
-    reply1 = await message.reply_text("**please wait**")
-    await asyncio.sleep(1)
-    reply2 = await reply1.edit("`opening`")
-    await asyncio.sleep(0.7)
-    await reply2.delete()
-    await message.reply_photo(
-        photo="https://telegra.ph/file/58adbfdd00ad008e2e62b.jpg",
-        caption="**Click the below button**",
-        reply_markup=InlineKeyboardMarkup(
-            [[
-                InlineKeyboardButton("Open in private", url="https://t.me/Sivatheboss_x_robot?start=True")
-            ]]
-        )
-    )
-"""
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
