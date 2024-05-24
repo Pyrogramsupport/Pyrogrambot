@@ -10,7 +10,7 @@ Siva = Client(
 )
 
 print("Bot is started and perfectly working ")
-if __init__ = __main__:
+if __init__ == __main__:
     Siva.run()
     try:
         await Siva.send_photo(
