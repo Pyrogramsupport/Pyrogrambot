@@ -9,8 +9,7 @@ async def main():
         bot_token="7065912334:AAH-po3qWn85LJXgre0qni4waQgQ3sjsv1g",
         plugins=dict(root="Bot")
     )
-
-print("Bot is started and perfectly working ")
+    
     async with Siva: 
         await Siva.send_photo(
             chat_id=-1002123259805,
