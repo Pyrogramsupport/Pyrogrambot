@@ -13,7 +13,7 @@ print("Bot is started and perfectly working ")
 async def main():
     async with Siva:
         await Siva.send_photo(
-            chat_id=-4245469241,
+            chat_id=-1002153992729,
             photo="https://telegra.ph/file/cefe116aeebdc9462971a.jpg",
             caption="𝐵𝑜𝑡 𝑖𝑠 𝑠𝑡𝑎𝑟𝑡𝑒𝑑 𝑡𝑜 𝑤𝑜𝑟𝑘𝑖𝑛𝑔"
         )
