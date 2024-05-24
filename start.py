@@ -23,7 +23,7 @@ buttons = [[
 
 #start cmd filters 
     
-@Client.on_message(filters.command("start"))
+@Client.on_message(filters.command("start") & filters.private)
 async def start_cmd(client, message):
     reply1 = await message.reply_text("`Loading `")
     await asyncio.sleep(0.9)
@@ -48,7 +48,7 @@ async def start_cmd(client, msg):
     await asyncio.sleep(1)
     reply2 = await reply1.edit("`opening`")
     await asyncio.sleep(0.7)
-    await reply2.edit(
+    await msg.reply_text(
         photo="https://telegra.ph/file/58adbfdd00ad008e2e62b.jpg",
         caption="**Click the below button**",
         reply_markup=InlineKeyboardMarkup(
