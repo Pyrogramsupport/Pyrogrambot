@@ -36,7 +36,7 @@ if len(message.text.split()) > 1 and message.text.split()[1].startswith('aq'):
             caption=PM_START,
             reply_markup=InlineKeyboardMarkup(buttons)
         )
-    print("Start Command is working")
+        print("Start Command is working")
 
 
 @app.on_message(filters.command("start") & filters.group)
