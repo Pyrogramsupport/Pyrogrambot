@@ -22,7 +22,7 @@ buttons = [[
 
 
 #start cmd filters 
-    
+ """   
 @Client.on_message(filters.command("start") & filters.private)
 async def start_cmd(client, message):
     reply1 = await message.reply_text("`Loading `")
@@ -58,7 +58,7 @@ async def start_cmd(client, message):
             ]]
         )
     )
-
+"""
 
 
 
