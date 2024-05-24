@@ -51,7 +51,7 @@ async def start_cmd(client, msg):
         caption="**Click the below button**",
         reply_markup=InlineKeyboardMarkup(
             [[
-                InlineKeyboardButton("Open in private", url="https://t.me/Sivatheboss_x_robot")
+                InlineKeyboardButton("Open in private", url="https://t.me/Sivatheboss_x_robot?start=True")
             ]]
         )
     )
