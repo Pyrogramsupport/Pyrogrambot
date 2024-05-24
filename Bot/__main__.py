@@ -1,6 +1,7 @@
 from Bot import app
 
 if __name__ == "__main__":
+    print("bot is functioning")
     app.run()
     with app:
         Siva.send_photo(
