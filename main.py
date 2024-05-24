@@ -8,4 +8,12 @@ Siva = Client(
     bot_token="7065912334:AAH-po3qWn85LJXgre0qni4waQgQ3sjsv1g",
     plugins=dict(root="Bot")
 )
-Siva.run()
+
+if __name__ == "__main__":
+    Siva.run()
+    with Siva:
+        Siva.send_photo(
+        chat_id=-1002123259805,
+        photo="https://telegra.ph/file/cefe116aeebdc9462971a.jpg",
+        caption="𝐵𝑜𝑡 𝑖𝑠 𝑠𝑡𝑎𝑟𝑡𝑒𝑑 𝑡𝑜 𝑤𝑜𝑟𝑘𝑖𝑛𝑔"
+        )
