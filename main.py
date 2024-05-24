@@ -10,12 +10,12 @@ Siva = Client(
 )
 
 print("Bot is started and perfectly working ")
-if __init__ == __main__:
-    Siva.run()
-        await Siva.send_photo(
-            chat_id=-1002123259805,
-            photo="https://telegra.ph/file/cefe116aeebdc9462971a.jpg",
-            caption="𝐵𝑜𝑡 𝑖𝑠 𝑠𝑡𝑎𝑟𝑡𝑒𝑑 𝑡𝑜 𝑤𝑜𝑟𝑘𝑖𝑛𝑔"
-        )
-    
-
+async def main():
+    await Siva.start()
+    await Siva.send_photo(
+        chat_id=-1002123259805,
+        photo="https://telegra.ph/file/cefe116aeebdc9462971a.jpg",
+        caption="𝐵𝑜𝑡 𝑖𝑠 𝑠𝑡𝑎𝑟𝑡𝑒𝑑 𝑡𝑜 𝑤𝑜𝑟𝑘𝑖𝑛𝑔"
+    )
+    await Siva.stop()
+Siva.run(main())
