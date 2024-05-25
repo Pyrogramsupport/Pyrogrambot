@@ -7,10 +7,5 @@ import script
 async def help_cmd(client, msg):
     await msg.reply_text(
         text = script.HELP_TEXT,
-        reply_markup = InlineKeyboardMarkup(
-            [[
-                  InlineKeyboardButton("Info", callback_data="info")
-            ]]
-        )
+        reply_markup = InlineKeyboardMarkup(script.HELP_BUTTON)
     )
-    
