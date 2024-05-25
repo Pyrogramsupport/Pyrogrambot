@@ -1,4 +1,19 @@
+
 pyrogram
+pyromod
+pillow
+pymongo
+pymongo[srv]
+pypng
+pyqrcode
 tgcrypto
+telegraph
+requests 
 asyncio
-requests
+aiohttp
+aiofiles
+bs4
+icrawler
+opencv-python-headless # image edit
+gpytranslate
+glitch_this
