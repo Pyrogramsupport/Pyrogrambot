@@ -61,11 +61,6 @@ async def start_cmd(client, message):
 
 @app.on_message(filters.command("start") & filters.group)
 async def start_cmd(client, msg):
-    reply1 = await msg.reply_text("**please wait**")
-    await asyncio.sleep(1)
-    reply2 = await reply1.edit("`opening`")
-    await asyncio.sleep(0.7)
-    await reply2.delete()
     await msg.reply_photo(
         photo="https://telegra.ph/file/58adbfdd00ad008e2e62b.jpg",
         caption="**Click the below button**",
