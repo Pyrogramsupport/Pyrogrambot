@@ -9,9 +9,6 @@ from Bot import app
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-credits = [[
-        InlineKeyboardButton("Credits", url="https://t.me/nandha")
-]]
 
 GM_TEXT = [
 "Let your morning be the start of your new life. Do your best and forget about the rest. Good morning!",
@@ -72,23 +69,19 @@ GA_TEXT = [
 async def mornings(_, message):
         if re.search("morning", message.text):
                  return await message.reply(
-                         text="**yee? {} good morning! and for you my quote 🥰**\n`{}`".format(message.from_user.first_name, random.choice(GM_TEXT)),
-                         reply_markup=InlineKeyboardMarkup(credits)
+                         text="**yee? {} good morning! and for you my quote 🥰**\n`{}`".format(message.from_user.first_name, random.choice(GM_TEXT))                 
                  )
         elif re.search("night", message.text):
                  return await message.reply(
-                         text="**yee? {} good night! and for you my quote 🥰**\n`{}`".format(message.from_user.first_name, random.choice(GN_TEXT)),
-                         reply_markup=~InlineKeyboardMarkup(credits)
+                         text="**yee? {} good night! and for you my quote 🥰**\n`{}`".format(message.from_user.first_name, random.choice(GN_TEXT))
                  )
         elif re.search("evening", message.text):
                  return await message.reply(
-                         text="**yee? {} good evening! and for you my quote 🥰**\n`{}`".format(message.from_user.first_name, random.choice(GE_TEXT)),
-                         reply_markup=InlineKeyboardMarkup(credits)
+                         text="**yee? {} good evening! and for you my quote 🥰**\n`{}`".format(message.from_user.first_name, random.choice(GE_TEXT))
                  )
         elif re.search("afternoon", message.text):
                  return await message.reply(
-                         text="**yee? {} good afternoon! and for you my quote 🥰**\n`{}`".format(message.from_user.first_name, random.choice(GA_TEXT)),
-                         reply_markup=InlineKeyboardMarkup(credits)
+                         text="**yee? {} good afternoon! and for you my quote 🥰**\n`{}`".format(message.from_user.first_name, random.choice(GA_TEXT))
                  )
  
 
