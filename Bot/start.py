@@ -54,7 +54,7 @@ async def start_cmd(client, message):
          await asyncio.sleep(0.3)
          await message.reply_photo(
              photo = "https://telegra.ph/file/58adbfdd00ad008e2e62b.jpg",
-             caption=PM_TEXT.format(message.from_user.first_name),
+             caption=script.PM_TEXT.format(message.from_user.first_name),
              reply_markup=InlineKeyboardMarkup(buttons)
          )
          print("Start Command is working")
