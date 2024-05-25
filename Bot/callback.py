@@ -15,7 +15,6 @@ async def callback(bot, msg: CallbackQuery):
                 ]]
             )
         )
-        )
     elif msg.data == "help_back":
         await msg.message.edit(
             text=script.HELP_TEXT,
