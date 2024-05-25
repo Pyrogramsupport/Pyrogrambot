@@ -49,7 +49,7 @@ async def logo(_, message):
      fillcolor = "black"
      shadowcolor = "blue"
      font = ImageFont.truetype("images/logofont.otf", 140)
-     w, h = draw.textsize(text, font=font)
+     w, h = draw.text(text, font=font)
      h += int(h*0.21)
      image_width, image_height = img.size
      draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(255, 255, 255))
