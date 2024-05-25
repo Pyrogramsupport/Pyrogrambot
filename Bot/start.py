@@ -1,3 +1,4 @@
+import script 
 from pyrogram import Client, emoji, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 import asyncio
@@ -23,12 +24,6 @@ async def welcome(client, message):
 
 
 
-
-
-
-PM_START = """Hello.....!, I am Siva the boss robot.
-Bot is under maintenance, Still wait for new features.
-"""
 #start cmd buttons
 
 
@@ -58,7 +53,7 @@ async def start_cmd(client, message):
          await asyncio.sleep(0.3)
          await message.reply_photo(
              photo = "https://telegra.ph/file/58adbfdd00ad008e2e62b.jpg",
-             caption=PM_START,
+             caption=PM_TEXT,
              reply_markup=InlineKeyboardMarkup(buttons)
          )
          print("Start Command is working")
