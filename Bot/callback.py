@@ -8,7 +8,7 @@ import script
 async def callback(bot, msg: CallbackQuery):
     if msg.data == "info":
         await msg.message.edit(
-            text = "/info :- get user info ",
+            text = "Info usage \n• /info :- get user info. \n• /ginfo :- Gets group info.",
             reply_markup=InlineKeyboardMarkup(
                 [[
                     InlineKeyboardButton("🔙 Back", callback_data="help_back")
@@ -20,7 +20,17 @@ async def callback(bot, msg: CallbackQuery):
             text=script.HELP_TEXT,
             reply_markup=InlineKeyboardMarkup(
                 [[
-                    InlineKeyboardButton("Info", callback_data="info")
+                    InlineKeyboardButton("Info", callback_data="info"),
+                    InlineKeyboardButton("Day the wishes", callback_data="day")
+                ]]
+            )
+        )
+    elif msg.data == "day":
+        await msg.message.edit(
+            text = "**CLICK ** \n``morning`` , ``evening`` , ``afternoon`` , ``night`` :- use this words wait and see.",
+            reply_markup=reply_markup=InlineKeyboardMarkup(
+                [[
+                    InlineKeyboardButton("🔙 Back", callback_data="help_back")
                 ]]
             )
         )
