@@ -1,8 +1,9 @@
-import script 
+ 
 from pyrogram import Client, emoji, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 import asyncio
 from Bot import app
+import script
 
 # Target chat. Can also be a list of multiple chat ids/usernames
 TARGET = -1002054576768
