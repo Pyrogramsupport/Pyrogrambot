@@ -1,0 +1,1 @@
+PM_TEXT = "HEY {} ! I AM SIVA THE  BOSS ROBOT. \n  I AM ANIMATED GROUP MANAGEMENT BOT AND MORE EXTRA FEATURES AVAILABLE "                                         
