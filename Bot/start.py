@@ -13,7 +13,7 @@ MESSAGE = "{} Welcome to [Pyrogram](https://t.me/siva_chat)'s group chat {}!"
 
 
 # Filter in only new_chat_members updates generated in TARGET chat
-@app.on_message(filters.chat(chat.id) & filters.new_chat_members)
+@app.on_message(filters.new_chat_members)
 async def welcome(client, message):
     # Build the new members list (with mentions) by using their first_name
     new_members = [u.mention for u in message.new_chat_members]
