@@ -9,5 +9,6 @@ HELP_TEXT = "Hello There! Here you can get all of the help commands!"
 
 HELP_BUTTON = [[
     InlineKeyboardButton("Info", callback_data="info"),
-    InlineKeyboardButton("Day the wishes", callback_data="day")
+    InlineKeyboardButton("Day the wishes", callback_data="day"),
+    InlineKeyboardButton("Logo", callback_data="logo")
 ]]
