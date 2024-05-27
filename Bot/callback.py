@@ -19,6 +19,7 @@ async def callback(bot, msg: CallbackQuery):
         await msg.message.edit(
             text=script.HELP_TEXT,
             reply_markup=InlineKeyboardMarkup(script.HELP_BUTTON)
+        )
                 
     elif msg.data == "day":
         await msg.message.edit(
