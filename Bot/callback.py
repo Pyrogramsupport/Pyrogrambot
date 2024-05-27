@@ -34,5 +34,14 @@ async def callback(bot, msg: CallbackQuery):
                 ]]
             )
         )
+    elif msg.data == "logo"
+        await msg.message.edit(
+            text = "_______________________\n    **Logo**     \n____________________\n• /logo = generate a logo.\n**Note :-** 1. If you reply a image make a logo that image.\n      2. If you not reply a img don't worry, it take random image.\n Ex :- /logo Siva",
+            reply_markup=InlineKeyboardMarkup(
+                [[
+                    InlineKeyboardButton("🔙 Back", callback_data="help_back")
+                ]]
+            )
+    )
           
   
