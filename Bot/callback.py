@@ -18,13 +18,8 @@ async def callback(bot, msg: CallbackQuery):
     elif msg.data == "help_back":
         await msg.message.edit(
             text=script.HELP_TEXT,
-            reply_markup=InlineKeyboardMarkup(
-                [[
-                    InlineKeyboardButton("Info", callback_data="info"),
-                    InlineKeyboardButton("Day the wishes", callback_data="day")
-                ]]
-            )
-        )
+            reply_markup=InlineKeyboardMarkup(script.HELP_BUTTON)
+                
     elif msg.data == "day":
         await msg.message.edit(
             text = "**CLICK ** == `morning` , `evening` , `afternoon` , `night` :- use this words wait and see.",
