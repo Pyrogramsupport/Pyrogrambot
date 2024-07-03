@@ -3,9 +3,9 @@ import os
 import time
 
 
-api_id = os.getenv("API_ID")
-api_hash = os.getenv("API_HASH")
-bot_token = os.getenv("TOKEN")
+api_id = 19042248
+api_hash = "a1d443cb79941a89c493f22abf4f84cb"
+bot_token = "7186790371:AAHT3lvITPS6JRC-7MCtIRThK3yS-NHWe7U"
 
 
 
